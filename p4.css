@@ -1,0 +1,26 @@
+.style-list{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.style-list li{
+    padding: 10px 15px;
+    background-color: red;
+    margin: 15px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.style-list li::before{
+    content: ".";
+    color: aqua;
+    font-size: medium;
+    position: absolute;
+    left: -20px;
+    
+}
+
+.style-list li:hover{
+    background-color: green;
+}
